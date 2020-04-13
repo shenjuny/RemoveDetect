@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RD" Class="RDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JQSA0095;Initial Catalog=RD;Integrated Security=True" SettingsObjectName="RemoveDetectData.Properties.Settings" SettingsPropertyName="RDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cofig" Member="cofig">
+    <Type Name="cofig">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tools" Member="tools">
+    <Type Name="tools">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="picture" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="x" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="w" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="h" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.role" Member="role">
+    <Type Name="role">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="roleID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[user]" Member="user">
+    <Type Name="user">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="face" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="groupNum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="department" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginLog" Member="loginLog">
+    <Type Name="loginLog">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="isOK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.device" Member="device">
+    <Type Name="device">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mask" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Num" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="layer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="seats" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="limitTIme" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hostName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IPVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DNS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.deviceState" Member="deviceState">
+    <Type Name="deviceState">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="layerNum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="seatNum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="isok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

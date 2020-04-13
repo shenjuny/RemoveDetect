@@ -1,0 +1,104 @@
+E:\code\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojResolveAssemblyReference.cache
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.Cache
+E:\code\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+E:\code\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+E:\code\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojAssemblyReference.cache
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.cache
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+C:\Users\Administrator.PC-201811062052\Desktop\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojResolveAssemblyReference.cache
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.Cache
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojResolveAssemblyReference.cache
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+C:\Users\shen\Documents\WeChat Files\wxid_8595555956612\FileStorage\File\2019-09\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.Cache
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.addFace.resources
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.dll
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.xml
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.xml
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.xml
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.pdb
+H:\项目文档\智能设备柜\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.xml
+H:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojResolveAssemblyReference.cache
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.addFace.resources
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+H:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.Cache
+H:\RemoveDetect\RemoveDetect\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+H:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.dll
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.pdb
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.xml
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.pdb
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Blob.xml
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.pdb
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.Extensions.xml
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.pdb
+H:\RemoveDetect\RemoveDetect\bin\Debug\OpenCvSharp.UserInterface.xml
+G:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe.config
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.exe
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.pdb
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csprojResolveAssemblyReference.cache
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.addFace.resources
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Main.resources
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.logon.resources
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.Properties.Resources.resources
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.config.resources
+G:\RemoveDetect\RemoveDetect\obj\Debug\RemoveDetect.csproj.GenerateResource.Cache
+G:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.exe
+G:\RemoveDetect\RemoveDetect\bin\Debug\RemoveDetect.pdb
+G:\RemoveDetect\RemoveDetect\bin\Debug\Emgu.CV.UI.xml
+G:\RemoveDetect\RemoveDetect\bin\Debug\Emgu.CV.World.xml

@@ -1,0 +1,8 @@
+H:\RemoveDetect\RemoveDetect\bin\x64\Release\RemoveDetect.exe.config
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.csprojResolveAssemblyReference.cache
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.addFace.resources
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.Main.resources
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.logon.resources
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.Properties.Resources.resources
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.config.resources
+H:\RemoveDetect\RemoveDetect\obj\x64\Release\RemoveDetect.csproj.GenerateResource.Cache

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8001/WcfService1/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RDService" />
+  <xs:element name="logon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="face" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="logonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="logonResult" nillable="true" type="q1:CommonOutputTOfuserVe5_SBHZS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="face" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="groupNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="editUserResult" nillable="true" type="q2:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="face" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="groupNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="addUserResult" nillable="true" type="q3:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUserList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="getUserListResult" nillable="true" type="q4:PageRowsOfArrayOfuserVe5_SBHZS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="searchUsersResult" nillable="true" type="q5:PageRowsOfArrayOfuserVe5_SBHZS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="deleteUserResult" nillable="true" type="q6:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mask" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="size" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="layer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="seats" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="limitTIme" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IPVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DNS" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="addDeviceResult" nillable="true" type="q7:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mask" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="size" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="layer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="seats" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="limitTIme" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IPVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DNS" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="editDeviceResult" nillable="true" type="q8:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDeviceList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDeviceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="getDeviceListResult" nillable="true" type="q9:PageRowsOfArrayOfdeviceVe5_SBHZS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addToolsPosition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="layer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="seat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isok" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addToolsPositionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/RDService" minOccurs="0" name="addToolsPositionResult" nillable="true" type="q10:CommonOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="searchTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

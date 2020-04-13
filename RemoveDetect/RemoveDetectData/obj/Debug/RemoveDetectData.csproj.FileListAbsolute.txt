@@ -1,0 +1,17 @@
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll.config
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.pdb
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.csprojResolveAssemblyReference.cache
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.dll
+H:\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.pdb
+F:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll.config
+F:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll
+F:\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.pdb
+F:\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.dll
+F:\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.pdb
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll.config
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.dll
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\bin\Debug\RemoveDetectData.pdb
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.csprojResolveAssemblyReference.cache
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.dll
+D:\code\RemoveDetect\RemoveDetect\RemoveDetectData\obj\Debug\RemoveDetectData.pdb

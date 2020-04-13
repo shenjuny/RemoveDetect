@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84359E5E-ADFC-43BE-A1B7-89B4EAFF0C4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RemoveDetect</RootNamespace>
+    <AssemblyName>RemoveDetect</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="RemoveDetectData">
+      <HintPath>..\RemoveDetectData\bin\Debug\RemoveDetectData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WcfService1">
+      <HintPath>..\WcfService1\bin\WcfService1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0-loginOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginOK.Designer.cs">
+      <DependentUpon>0-loginOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-menuList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-menuList.Designer.cs">
+      <DependentUpon>1-menuList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-menuLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-menuLogout.Designer.cs">
+      <DependentUpon>1-menuLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-toolAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-toolAdd.Designer.cs">
+      <DependentUpon>2-toolAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-toolBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-toolBack.Designer.cs">
+      <DependentUpon>2-toolBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-toolManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-toolManage.Designer.cs">
+      <DependentUpon>2-toolManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-toolPickBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-toolPickBack.Designer.cs">
+      <DependentUpon>2-toolPickBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-toolPickUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-toolPickUp.Designer.cs">
+      <DependentUpon>2-toolPickUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3-userAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3-userAdd.Designer.cs">
+      <DependentUpon>3-userAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3-userAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3-userAuthority.Designer.cs">
+      <DependentUpon>3-userAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3-userEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3-userEdit.Designer.cs">
+      <DependentUpon>3-userEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3-userManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3-userManage.Designer.cs">
+      <DependentUpon>3-userManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3-userRoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3-userRoleAdd.Designer.cs">
+      <DependentUpon>3-userRoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4-check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4-check.Designer.cs">
+      <DependentUpon>4-check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4-checkDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4-checkDetail.Designer.cs">
+      <DependentUpon>4-checkDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4-checkOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4-checkOperator.Designer.cs">
+      <DependentUpon>4-checkOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4-checkOperatorError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4-checkOperatorError.Designer.cs">
+      <DependentUpon>4-checkOperatorError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4-checkOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4-checkOver.Designer.cs">
+      <DependentUpon>4-checkOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5-toolConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5-toolConfig.Designer.cs">
+      <DependentUpon>5-toolConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6-InitConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6-InitConfig.Designer.cs">
+      <DependentUpon>6-InitConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addIC.Designer.cs">
+      <DependentUpon>addIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authority.cs" />
+    <Compile Include="crc.cs" />
+    <Compile Include="0-loginError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginError.Designer.cs">
+      <DependentUpon>0-loginError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0-loginFaceRecog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginFaceRecog.Designer.cs">
+      <DependentUpon>0-loginFaceRecog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addFace.Designer.cs">
+      <DependentUpon>addFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="darknet.cs" />
+    <Compile Include="DBSet.cs" />
+    <Compile Include="device.cs" />
+    <Compile Include="deviceChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deviceChange.designer.cs">
+      <DependentUpon>deviceChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0-loginIdCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginIdCard.Designer.cs">
+      <DependentUpon>0-loginIdCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0-loginChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginChoice.Designer.cs">
+      <DependentUpon>0-loginChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0-loginUserPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0-loginUserPW.designer.cs">
+      <DependentUpon>0-loginUserPW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x64\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x64\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x64\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config.designer.cs">
+      <DependentUpon>config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ROIconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROIconfig.designer.cs">
+      <DependentUpon>ROIconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RDService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="tool.cs" />
+    <Compile Include="toolChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toolChange.designer.cs">
+      <DependentUpon>toolChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="box.cs" />
+    <Compile Include="user.cs" />
+    <Compile Include="userChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userChange.designer.cs">
+      <DependentUpon>userChange.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="0-loginOK.resx">
+      <DependentUpon>0-loginOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-menuList.resx">
+      <DependentUpon>1-menuList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-menuLogout.resx">
+      <DependentUpon>1-menuLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-toolAdd.resx">
+      <DependentUpon>2-toolAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-toolBack.resx">
+      <DependentUpon>2-toolBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-toolManage.resx">
+      <DependentUpon>2-toolManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-toolPickBack.resx">
+      <DependentUpon>2-toolPickBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-toolPickUp.resx">
+      <DependentUpon>2-toolPickUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3-userAdd.resx">
+      <DependentUpon>3-userAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3-userAuthority.resx">
+      <DependentUpon>3-userAuthority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3-userEdit.resx">
+      <DependentUpon>3-userEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3-userManage.resx">
+      <DependentUpon>3-userManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3-userRoleAdd.resx">
+      <DependentUpon>3-userRoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4-check.resx">
+      <DependentUpon>4-check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4-checkDetail.resx">
+      <DependentUpon>4-checkDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4-checkOperator.resx">
+      <DependentUpon>4-checkOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4-checkOperatorError.resx">
+      <DependentUpon>4-checkOperatorError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4-checkOver.resx">
+      <DependentUpon>4-checkOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5-toolConfig.resx">
+      <DependentUpon>5-toolConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6-InitConfig.resx">
+      <DependentUpon>6-InitConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addIC.resx">
+      <DependentUpon>addIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0-loginError.resx">
+      <DependentUpon>0-loginError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0-loginFaceRecog.resx">
+      <DependentUpon>0-loginFaceRecog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addFace.resx">
+      <DependentUpon>addFace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deviceChange.resx">
+      <DependentUpon>deviceChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0-loginIdCard.resx">
+      <DependentUpon>0-loginIdCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0-loginChoice.resx">
+      <DependentUpon>0-loginChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0-loginUserPW.resx">
+      <DependentUpon>0-loginUserPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.addFace.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.config.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.deviceChange.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.faceRecog.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.logon.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.Main.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.modelmatch.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.ROIconfig.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.toolChange.resources" />
+    <EmbeddedResource Include="obj\x64\Debug\RemoveDetect.userChange.resources" />
+    <EmbeddedResource Include="obj\x64\Release\RemoveDetect.addFace.resources" />
+    <EmbeddedResource Include="obj\x64\Release\RemoveDetect.config.resources" />
+    <EmbeddedResource Include="obj\x64\Release\RemoveDetect.logon.resources" />
+    <EmbeddedResource Include="obj\x64\Release\RemoveDetect.Main.resources" />
+    <EmbeddedResource Include="obj\x64\Release\RemoveDetect.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="config.resx">
+      <DependentUpon>config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROIconfig.resx">
+      <DependentUpon>ROIconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toolChange.resx">
+      <DependentUpon>toolChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userChange.resx">
+      <DependentUpon>userChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\x64\Debug\RemoveDetect.exe.config" />
+    <None Include="bin\x64\Debug\RemoveDetect.vshost.exe.config" />
+    <None Include="bin\x64\Debug\RemoveDetect.vshost.exe.manifest" />
+    <None Include="bin\x64\device.csv" />
+    <None Include="bin\x64\tool.csv" />
+    <None Include="bin\x64\user.csv" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x64\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x64\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x64\Debug\RemoveDetect.csproj.GenerateResource.Cache" />
+    <None Include="obj\x64\Debug\RemoveDetect.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x64\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x64\Release\RemoveDetect.csproj.GenerateResource.Cache" />
+    <None Include="obj\x64\Release\RemoveDetect.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\DataSources\RemoveDetectData.device.datasource" />
+    <None Include="Properties\DataSources\RemoveDetectData.user.datasource" />
+    <None Include="Properties\DataSources\RemoveDetectService.CommonOutput.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\RDService\RemoveDetect.RDService.CommonOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RDService\RemoveDetect.RDService.CommonOutputTOfuserVe5_SBHZS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RDService\RemoveDetect.RDService.PageRowsOfArrayOfdeviceVe5_SBHZS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RDService\RemoveDetect.RDService.PageRowsOfArrayOfuserVe5_SBHZS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RDService\Service11.wsdl" />
+    <None Include="Service References\RDService\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RDService\Service141.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RDService\Service142.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RDService\Service143.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\x64\Debug\1.jpg" />
+    <Content Include="bin\x64\Debug\2.jpg" />
+    <Content Include="bin\x64\Debug\3.jpg" />
+    <Content Include="bin\x64\Debug\AForge.Controls.dll" />
+    <Content Include="bin\x64\Debug\AForge.dll" />
+    <Content Include="bin\x64\Debug\AForge.Imaging.dll" />
+    <Content Include="bin\x64\Debug\AForge.Video.DirectShow.dll" />
+    <Content Include="bin\x64\Debug\AForge.Video.dll" />
+    <Content Include="bin\x64\Debug\cvextern.dll" />
+    <Content Include="bin\x64\Debug\Emgu.CV.UI.dll" />
+    <Content Include="bin\x64\Debug\Emgu.CV.UI.xml" />
+    <Content Include="bin\x64\Debug\Emgu.CV.World.dll" />
+    <Content Include="bin\x64\Debug\Emgu.CV.World.xml" />
+    <Content Include="bin\x64\Debug\haarcascade_frontalface_default.xml" />
+    <Content Include="bin\x64\Debug\RemoveDetect.exe" />
+    <Content Include="bin\x64\Debug\RemoveDetect.pdb" />
+    <Content Include="bin\x64\Debug\RemoveDetect.vshost.exe" />
+    <Content Include="bin\x64\Debug\result\1.jpg" />
+    <Content Include="bin\x64\Debug\result\2.jpg" />
+    <Content Include="bin\x64\Debug\source\3.jpg" />
+    <Content Include="bin\x64\Debug\source\user2\user2_1.jpg" />
+    <Content Include="bin\x64\Debug\test.xml" />
+    <Content Include="bin\x64\Debug\tools\tool8\tool8_1.jpg" />
+    <Content Include="bin\x64\Debug\user2_1.jpg" />
+    <Content Include="bin\x64\Debug\张三_1.jpg" />
+    <Content Include="bin\x64\Debug\沈军宇_1.jpg" />
+    <Content Include="bin\x64\Debug\盛晓翔_1.jpg" />
+    <Content Include="obj\Release\RemoveDetect.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x64\Debug\RemoveDetect.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x64\Debug\RemoveDetect.exe" />
+    <Content Include="obj\x64\Debug\RemoveDetect.pdb" />
+    <Content Include="obj\x64\Release\RemoveDetect.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\RemoveDetect.csproj.FileListAbsolute.txt" />
+    <None Include="Service References\RDService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RDService\configuration.svcinfo" />
+    <None Include="Service References\RDService\configuration91.svcinfo" />
+    <None Include="Resources\53673e62e993c828cb648505226e73b.png" />
+    <None Include="Resources\7ddc44b573b994de8eb931f0c1f7e57.png" />
+    <None Include="Resources\物品放行申请流程.png" />
+    <None Include="Resources\设备列表.png" />
+    <None Include="Resources\人员管理.png" />
+    <None Include="Resources\工具-2.png" />
+    <None Include="Resources\ico_库房管理_物品盘点.png" />
+    <None Include="Resources\主页.png" />
+    <None Include="Resources\暂无数据.png" />
+    <None Include="Resources\已归还.png" />
+    <None Include="Resources\选择.png" />
+    <None Include="Resources\退出 %281%29.png" />
+    <None Include="Resources\扫码.png" />
+    <None Include="Resources\警告.png" />
+    <None Include="Resources\工具箱借用.png" />
+    <None Include="Resources\错误.png" />
+    <None Include="Resources\成功.png" />
+    <None Include="Resources\成功 %281%29.png" />
+    <None Include="Resources\8_7人脸识别.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\x64\Release\" />
+    <Folder Include="bin\x86\Debug\" />
+    <Folder Include="bin\x86\Release\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="obj\x64\Debug\TempPE\" />
+    <Folder Include="obj\x64\Release\TempPE\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RDService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
